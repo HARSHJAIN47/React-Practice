@@ -7,8 +7,8 @@ import { useState } from "react";
 function App() {
   const [result, setResult] = useState("");
 
-  const clickHandler = (event) => {
-    return setResult(result.concat(event.target.value));
+  const clickHandler = (e) => {
+    return setResult(result.concat(e.target.value));
   };
 
   const clearDisplay = () => {
